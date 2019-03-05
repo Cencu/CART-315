@@ -7,15 +7,23 @@ public class WaveController : MonoBehaviour
 
     public float height;
     public float time;
+    private Vector3 startPos;
+    public GameObject Wavy;
+    public GameObject Ball;
     // Start is called before the first frame update
     void Start()
     {
-        iTween.MoveBy(this.gameObject, iTween.Hash("y", height, "time", time, "looptype", "pingpong", "eastype", iTween.EaseType.easeInOutSine));
+        startPos = Wavy.transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider collider)
     {
-        
+        if (collider.gameObject == Ball)
+        {
+            iTween.MoveBy(this.gameObject, iTween.Hash("y", height, "time", time, "looptype", "pingpong", "eastype", iTween.EaseType.easeInOutSine));
+            Wavy.transform.position = startPos;
+            Debug.Log("higf");
+        }
     }
 }

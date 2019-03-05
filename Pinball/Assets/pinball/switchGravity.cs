@@ -24,7 +24,7 @@ public class switchGravity : MonoBehaviour
         currentTime -= 1 * Time.deltaTime;
         if (currentTime <= 0 )
         {
-            mass = Random.Range(0, 10);
+            mass = Random.Range(-5, 10);
             currentTime = 5;
 
         }

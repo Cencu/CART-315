@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189367751}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.96, y: 1.71, z: 5.13}
+  m_LocalPosition: {x: 2.96, y: 1.95, z: 5.004}
   m_LocalScale: {x: 0.4, y: 1.0000005, z: 0.3000001}
   m_Children: []
   m_Father: {fileID: 1899550601}
@@ -2053,6 +2053,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2113512227}
+    - target: {fileID: 6607860470240325790, guid: 8c66ad608e098e74aa12bc6151dbd18b,
+        type: 3}
+      propertyPath: theScore
+      value: 
+      objectReference: {fileID: 2018306520}
     - target: {fileID: 8071637018375829128, guid: 8c66ad608e098e74aa12bc6151dbd18b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2076,6 +2081,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 345644571197754292}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1297778287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297778289}
+  - component: {fileID: 1297778288}
+  m_Layer: 0
+  m_Name: Asteroids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1297778288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297778287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644eadb319dd18c438b06736cae0ccf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {x: 1, y: 20, z: 2.5}
+  size: {x: 1.04, y: 1, z: 1}
+  AsteroidPrefab: {fileID: 7120079280132956831, guid: 71ce8ffcc2f77d54b829fff9b2477135,
+    type: 3}
+--- !u!4 &1297778289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297778287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3, y: 15.7, z: 4.091797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1318948369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,6 +2456,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 8416558}
+    - target: {fileID: 6607860470240325790, guid: 8c66ad608e098e74aa12bc6151dbd18b,
+        type: 3}
+      propertyPath: theScore
+      value: 
+      objectReference: {fileID: 2018306520}
     - target: {fileID: 8071637018375829128, guid: 8c66ad608e098e74aa12bc6151dbd18b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -4267,7 +4324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010231050}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.99, y: 1.71, z: 5.1300006}
+  m_LocalPosition: {x: -2.99, y: 2.09, z: 5.004}
   m_LocalScale: {x: 0.4000003, y: 1.0000005, z: 0.3000001}
   m_Children: []
   m_Father: {fileID: 1899550601}
@@ -4950,6 +5007,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 345644569935345430, guid: 04710bd98a9c5fc4ba830f9cb55f6256,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04710bd98a9c5fc4ba830f9cb55f6256, type: 3}
 --- !u!1001 &7059335708357821704
@@ -4972,17 +5034,17 @@ PrefabInstance:
     - target: {fileID: 7059335708194254520, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.73
+      value: -7.27
       objectReference: {fileID: 0}
     - target: {fileID: 7059335708194254520, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 7059335708194254520, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: -6.42
       objectReference: {fileID: 0}
     - target: {fileID: 7059335708194254520, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}

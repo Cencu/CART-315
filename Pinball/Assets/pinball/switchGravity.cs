@@ -28,7 +28,7 @@ public class switchGravity : MonoBehaviour
             currentTime = 5;
 
         }
-        Debug.Log(mass);
+       // Debug.Log(mass);
 
     }
 }

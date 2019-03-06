@@ -8,7 +8,7 @@ public class SpawnObject : MonoBehaviour
     public Vector3 size;
     public GameObject AsteroidPrefab;
     private int TheNumber;
-    private int NumDown = 10;
+    private int NumDown = 5000;
 
     // Start is called before the first frame update
     void Start()

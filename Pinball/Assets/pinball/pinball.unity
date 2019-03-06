@@ -2121,12 +2121,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297778287}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3, y: 15.7, z: 4.091797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.508, y: 15.72, z: -0.8183594}
+  m_LocalScale: {x: 0.4, y: 1, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1899550601}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1318948369
 GameObject:
@@ -3682,7 +3682,7 @@ MeshCollider:
   m_GameObject: {fileID: 1675479125}
   m_Material: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -3855,6 +3855,7 @@ Transform:
   - {fileID: 1318948370}
   - {fileID: 189367752}
   - {fileID: 2010231051}
+  - {fileID: 1297778289}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -5031,10 +5032,30 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7059335708194254520, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.27
+      value: -2.62
       objectReference: {fileID: 0}
     - target: {fileID: 7059335708194254520, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}
@@ -5092,26 +5113,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
         type: 2}
-    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.0000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7059335708194254521, guid: 079a795e38c524244adc0aa87a7df420,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5022898321759686944, guid: 079a795e38c524244adc0aa87a7df420,
         type: 3}
       propertyPath: hook
@@ -5190,6 +5191,21 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1461405896}
+    - target: {fileID: 6607860470240325790, guid: 8c66ad608e098e74aa12bc6151dbd18b,
+        type: 3}
+      propertyPath: theScore
+      value: 
+      objectReference: {fileID: 2018306520}
+    - target: {fileID: 8071637018375829128, guid: 8c66ad608e098e74aa12bc6151dbd18b,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 6.4949994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071637018375829128, guid: 8c66ad608e098e74aa12bc6151dbd18b,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -14.17
+      objectReference: {fileID: 0}
     - target: {fileID: 4912985633514910403, guid: 8c66ad608e098e74aa12bc6151dbd18b,
         type: 3}
       propertyPath: m_Faces.Array.data[0].m_TextureGroup
@@ -5349,21 +5365,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Faces.Array.data[31].m_TextureGroup
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6607860470240325790, guid: 8c66ad608e098e74aa12bc6151dbd18b,
-        type: 3}
-      propertyPath: theScore
-      value: 
-      objectReference: {fileID: 2018306520}
-    - target: {fileID: 8071637018375829128, guid: 8c66ad608e098e74aa12bc6151dbd18b,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 6.4949994
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071637018375829128, guid: 8c66ad608e098e74aa12bc6151dbd18b,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -14.17
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 590297091, guid: 8c66ad608e098e74aa12bc6151dbd18b, type: 3}

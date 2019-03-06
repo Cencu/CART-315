@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 212010691026065666}
   - component: {fileID: 5838933297088246715}
   - component: {fileID: 6587520340408793406}
+  - component: {fileID: 5047184244207643275}
   - component: {fileID: 901941359328777479}
   m_Layer: 0
   m_Name: Asteroid
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7120079280132956831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.0191338, y: 7.07, z: 4.091797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -90,8 +91,24 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5047184244207643275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120079280132956831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101eeff1b0ccde3488254aeb2a428737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 2
+  explosionEffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  blastRadi: 1
+  force: 1
 --- !u!54 &901941359328777479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -102,7 +119,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0

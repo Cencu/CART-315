@@ -20,7 +20,7 @@ public class SpawnObject : MonoBehaviour
     void Update()
     {
         TheNumber = Random.Range(1, NumDown);
-        if (TheNumber <= 2)
+        if (TheNumber <= 3)
         {
             SpawnAsteroids();
             NumDown += 100;

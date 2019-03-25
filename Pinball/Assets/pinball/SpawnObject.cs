@@ -26,7 +26,7 @@ public class SpawnObject : MonoBehaviour
             NumDown += 100;
         }
         NumDown--;
-        Debug.Log(TheNumber);
+        //Debug.Log(TheNumber);
     }
 
     public void SpawnAsteroids()

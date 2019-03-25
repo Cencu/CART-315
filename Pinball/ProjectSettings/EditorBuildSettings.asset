@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/pinball/levelTwo.unity
+    guid: 9e4afa601ce8dda46ac26abfe436a972
+  - enabled: 1
+    path: Assets/pinball/pinball.unity
+    guid: ec81aa173c0ee4a479965d5be75da849
+  - enabled: 1
+    path: Assets/pinball/levelThree.unity
+    guid: 38b5eaacf1431ef469ca9c9c182443ae
   m_configObjects: {}

@@ -15,7 +15,11 @@ public class BallOFB : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            Ball.transform.position = initialPosition;
+
+        }
     }
 
     private void OnTriggerEnter(Collider collider)

@@ -11,6 +11,7 @@ public class PlungerScript : MonoBehaviour
     public Slider powerSlider;
     List<Rigidbody> ballList;
     bool ballReady;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +41,10 @@ public class PlungerScript : MonoBehaviour
                 if (power <= maxPower)
                 {
                     power += 50*Time.deltaTime;
+
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 foreach (Rigidbody r in ballList )
                 {

@@ -7,7 +7,7 @@ public class Attractor : MonoBehaviour
     public Rigidbody rb;
 
     //create a constant
-    const float G = 3;
+    const float G = 8;
 
     private void FixedUpdate()
     {

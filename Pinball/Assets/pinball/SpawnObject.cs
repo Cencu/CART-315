@@ -8,7 +8,7 @@ public class SpawnObject : MonoBehaviour
     public Vector3 size;
     public GameObject AsteroidPrefab;
     private int TheNumber;
-    private int NumDown = 5000;
+    private int NumDown = 9000;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class SpawnObject : MonoBehaviour
         if (TheNumber <= 3)
         {
             SpawnAsteroids();
-            NumDown += 100;
+            NumDown += 1000;
         }
         NumDown--;
         //Debug.Log(TheNumber);

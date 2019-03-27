@@ -5,8 +5,8 @@ using TMPro;
 public class Score : MonoBehaviour
 {
     int score = 0;
-    int multiplier = 1;
-    public TMPro.TextMeshPro multipliertext;
+  //  int multiplier = 1;
+  //  public TMPro.TextMeshPro multipliertext;
 
     // Start is called before the first frame update
     void Start()
@@ -18,15 +18,15 @@ public class Score : MonoBehaviour
     void FixedUpdate()
     {
         this.GetComponent<TMPro.TextMeshPro>().text = score.ToString();
-        multipliertext.text = "x" + multiplier.ToString();
+       // multipliertext.text = "x" + multiplier.ToString();
     }   
     public void addScore (int points)
     {
-        score = score + points * multiplier;
+        score = score + points;
     }
     public void addMultiplier (int multiplierPoints)
     {
-        multiplier = multiplier + multiplierPoints;
+        //multiplier = multiplier + multiplierPoints;
     }
 
     public void ResetScore()
@@ -35,6 +35,6 @@ public class Score : MonoBehaviour
     }
     public void ResetMultiplier()
     {
-        multiplier = 1;
+       // multiplier = 1;
     }
 }

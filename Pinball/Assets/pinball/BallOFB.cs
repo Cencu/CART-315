@@ -6,6 +6,8 @@ public class BallOFB : MonoBehaviour
 {
     private Vector3 initialPosition;
     public GameObject Ball;
+    public Score theScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class BallOFB : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.R))
         {
             Ball.transform.position = initialPosition;
+            theScore.addScore(1);
 
         }
     }
@@ -26,7 +29,6 @@ public class BallOFB : MonoBehaviour
     {
         if (collider.gameObject == Ball)
         {
-            Debug.Log("noooo");
             Ball.transform.position = initialPosition;
         }
     }

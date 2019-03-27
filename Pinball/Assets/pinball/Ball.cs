@@ -28,7 +28,6 @@ public class Ball : MonoBehaviour
             
                 windZone = col.gameObject;
                 inWindZone = true;
-                Debug.Log("spdoa");
                
         }
     }

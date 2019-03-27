@@ -11,7 +11,7 @@ public class scrollUV : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         MeshRenderer mr = GetComponent<MeshRenderer>();
         Material mat = mr.material;

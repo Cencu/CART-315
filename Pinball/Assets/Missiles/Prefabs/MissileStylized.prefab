@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23301907247706570}
   - component: {fileID: 14224798483318961}
   - component: {fileID: 3371915676644866488}
+  - component: {fileID: 7048371123363717226}
   m_Layer: 0
   m_Name: MissileStylized
   m_TagString: Untagged
@@ -100,6 +101,10 @@ MonoBehaviour:
     space: 1
   ignoreTimescale: 0
   Ball: {fileID: 0}
+  Sliding_Door: {fileID: 0}
+  explosionEffect: {fileID: 0}
+  blastRadi: 0.1
+  force: 0.1
 --- !u!114 &3371915676644866488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,6 +121,19 @@ MonoBehaviour:
   explosionEffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   blastRadi: 0.1
   force: 0.1
+--- !u!135 &7048371123363717226
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070339840893364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &1970580108369832
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,5 +176,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 0.55, z: 2.2}
+  m_Size: {x: 0.78, y: 0.76, z: 3.29}
   m_Center: {x: 0, y: 0, z: 0}

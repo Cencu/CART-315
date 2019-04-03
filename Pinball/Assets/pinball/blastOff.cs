@@ -19,13 +19,17 @@ public class blastOff : MonoBehaviour
 
     }
 
-    private void OnTrigger(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject == Ball)
         {
-            End.transform.Translate(0, 0, Time.deltaTime * 1000);
-            Ball.transform.Translate(0, 0, Time.deltaTime * 2);
+            Debug.Log("hit");
+            End.transform.Translate(0, Time.deltaTime * 2, 0, Space.World);
 
+            Ball.transform.Translate(0, Time.deltaTime * 2,0, Space.World);
+            Ball.GetComponent<Rigidbody>().useGravity = false;
+            Ball.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+           // Ball.GetComponent<Collider>().enabled = false;
 
         }
     }

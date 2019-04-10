@@ -31,7 +31,7 @@ public class Bumper : MonoBehaviour
         if (timer == 0)
         {
             theScore.addScore(0);
-           // theScore.addMultiplier(1);
+          //  theScore.addMultiplier(1);
 
         }
         //when theres a collison, we turn on force

@@ -21,7 +21,8 @@ public class BallOFB : MonoBehaviour
         {
             Ball.transform.position = initialPosition;
             theScore.addScore(1);
-
+            this.GetComponent<AudioSource>().Play();
+           
         }
     }
 
@@ -30,6 +31,7 @@ public class BallOFB : MonoBehaviour
         if (collider.gameObject == Ball)
         {
             Ball.transform.position = initialPosition;
+            this.GetComponent<AudioSource>().Play();
         }
     }
 }

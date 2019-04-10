@@ -29,7 +29,9 @@ public class blastOff : MonoBehaviour
             Ball.transform.Translate(0, Time.deltaTime * 2,0, Space.World);
             Ball.GetComponent<Rigidbody>().useGravity = false;
             Ball.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-           // Ball.GetComponent<Collider>().enabled = false;
+            // Ball.GetComponent<Collider>().enabled = false;
+            this.GetComponent<AudioSource>().Play();
+
 
         }
     }

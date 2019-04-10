@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/pinball/levelThree.unity
     guid: 38b5eaacf1431ef469ca9c9c182443ae
+  - enabled: 1
+    path: Assets/pinball/End.unity
+    guid: 1639f5e41bf2a2c47a6c0fd06f6c3875
   m_configObjects: {}

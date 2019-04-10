@@ -30,8 +30,10 @@ public class FlipperScript : MonoBehaviour
         if(Input.GetAxis(inputName)==1)
         {
             spring.targetPosition = pressedPosi;
+            this.GetComponent<AudioSource>().Play();
 
-        } else
+        }
+        else
         {
             spring.targetPosition = restPosi;
         }

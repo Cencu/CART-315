@@ -41,6 +41,7 @@ public class PlungerScript : MonoBehaviour
                 if (power <= maxPower)
                 {
                     power += 50*Time.deltaTime;
+                    this.GetComponent<AudioSource>().Play();
 
                 }
             }
@@ -64,6 +65,7 @@ public class PlungerScript : MonoBehaviour
         if (other.gameObject.CompareTag("Ball"))
         {
             ballList.Add(other.gameObject.GetComponent<Rigidbody>());
+          
         }
     }
     private void OnTriggerExit(Collider other)
@@ -72,6 +74,7 @@ public class PlungerScript : MonoBehaviour
         {
             ballList.Remove(other.gameObject.GetComponent<Rigidbody>());
             power = 0f;
+
         }
     }
 }

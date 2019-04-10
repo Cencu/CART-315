@@ -19,7 +19,8 @@ public class Attractor : MonoBehaviour
             if (attractor != this) { 
             //the object to attract is the attractor were currently looking at
             Attract(attractor);
-        }
+
+            }
         }
     }
 
@@ -44,4 +45,7 @@ public class Attractor : MonoBehaviour
         rbToAttract.AddForce(force);
 
     }
+
+  
+
 }

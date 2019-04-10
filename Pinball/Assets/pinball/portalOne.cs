@@ -10,5 +10,7 @@ public class portalOne : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Ball.transform.position = teleportTarget.transform.position;
+        this.GetComponent<AudioSource>().Play();
+
     }
 }

@@ -34,6 +34,8 @@ public class Sliding_Door_Script : MonoBehaviour
         if (coll.gameObject.tag == "Rocket")
         {
             SlideDoors(false);
+            this.GetComponent<AudioSource>().Play();
+            this.GetComponent<ConstantForce>().enabled = true;
         }
     }
 
